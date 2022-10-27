@@ -15,9 +15,7 @@ openclash)
 
 	opkg install wget-ssl coreutils-nohup bash iptables curl ca-certificates ipset ip-full iptables-mod-tproxy iptables-mod-extra libcap libcap-bin ruby ruby-yaml kmod-tun luci-compat libcurl4
 
-	wget -O /tmp/openclash.ipk https://cdn.jsdelivr.net/gh/vernesong/OpenClash@v0.45.59-beta/luci-app-openclash_0.45.59-beta_all.ipk
-	opkg install /tmp/openclash.ipk
-	rm -f /tmp/openclash.ipk
+	opkg install luci-app-openclash
 	;;
 common)
 	opkg install luci-i18n-base-zh-cn luci-app-ssr-plus luci-i18n-ssr-plus-zh-cn luci-compat luci-lib-ipkg luci-i18n-aliyundrive-webdav-zh-cn luci-app-serverchan luci-i18n-aliddns-zh-cn luci-i18n-vlmcsd-zh-cn luci-i18n-upnp-zh-cn luci-i18n-smartdns-zh-cn luci-i18n-ramfree-zh-cn
